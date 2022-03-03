@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+    <!-- start header -->
+    <header class="d-flex justify-center">
+        <h1>GENERATORE DI PASSWORD</h1>
+    </header>
+
+    <!-- start main -->
+    <main class="d-flex justify-center">
+        <form class="d-flex flex-column g-10px">
+            <input type="text" placeholder="Nome" id="name">
+            <input type="text" placeholder="Cognome" id="surname">
+            <input type="text" placeholder="Colore preferito" id="color">
+            <input type="submit" value="Submit" onclick="getUserInput()" id="submit">
+            <p>La tua Password è: <span id="password"></span></p>
+        </form>
+    </main>
+
+    <!-- start footer -->
+    <footer class="d-flex justify-center">
+        <b>Made by Moles Francesco - Copyright 2022</b>
+    </footer>
+</body>
+
+</html>
