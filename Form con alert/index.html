@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Password Generator</title>
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
 </head>
 
 <body>
@@ -17,19 +18,18 @@
 
     <!-- start main -->
     <main class="d-flex justify-center">
-        <div class="d-flex flex-column g-10px">
-            <span id="name"></span>
-            <span id="surname"></span>
-            <span id="color"></span>
-            <span id="password"></span>
-        </div>
+        <form class="d-flex flex-column g-10px">
+            <input type="text" placeholder="Nome" id="name">
+            <input type="text" placeholder="Cognome" id="surname">
+            <input type="text" placeholder="Colore preferito" id="color">
+            <input type="submit" value="Submit" onclick="getUserInput()" id="submit">
+        </form>
     </main>
 
     <!-- start footer -->
     <footer class="d-flex justify-center">
         <b>Made by Moles Francesco - Copyright 2022</b>
     </footer>
-    <script type="text/javascript" src="script.js"></script>
 </body>
 
 </html>
